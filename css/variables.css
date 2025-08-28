@@ -1,0 +1,38 @@
+:root {
+	/* Fonts Family */
+	--font-family-h1: "Zen Dots", sans-serif;
+	--font-family-default: "Montserrat", sans-serif;
+	/* Fonts Size */
+	--font-size-h1: 148px;
+	--font-size-h1-mobile: 60px;
+	--font-size-h2: 28px;
+	--font-size-h2-mobile: 24px;
+	--font-size-card-heading: 22px;
+	--font-size-card-heading-mobile: 18px;
+	--font-size-card-text: 12px;
+	--font-size-subtitle: 18px;
+	--font-size-default: 16px;
+	--font-size-forms: 14px;
+	--font-size-button-secondary: 12px;
+	/* Line Height:*/
+	--line-height-h1: 178px;
+	--line-height-h1-mobile: 140px;
+	--line-height-default: 160px;
+	/* Font Weight */
+	--font-weight-bold: 800;
+	--font-weight-semibold: 600;
+	--font-weight-medium: 500;
+	--font-weight-regular: 400;
+	/* COLORS */
+	--color-accent: #dd5306;
+	--color-primary-900: #333333;
+	--color-primary-500: #666666;
+	--color-primary-400: #c0c0c0;
+	--color-primary-200: #d7d7d7;
+	--color-primary-100: #efefef;
+	--color-secondary-circle: #dfdfdf;
+	--color-white: #ffffff;
+	/* MARGINs */
+	--margin-bottom-section: 200px;
+	--margin-bottom-section-mobile: 80px;
+}
