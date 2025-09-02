@@ -1,4 +1,8 @@
 /* Общие */
+html,
+body {
+	height: 100%;
+}
 /* Указываем box sizing */
 *,
 *::before,
