@@ -15,31 +15,46 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/utilities.css">
 	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
-<body class="body">
+<body class="body" id="toggleBurgerBody">
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
-				<div class="header__wrapper">
+				<nav class="header__nav">
 					<a href="#" class="header-logo__link"><img src="/img/icons/logo.svg" alt="Kiptilyi logo"
 							class="logo"></a>
-					<nav class="header__nav">
-						<ul class="nav__list">
-							<li class="nav__li"><a href="#" class="nav__link">About me</a></li>
-							<li class="nav__li"><a href="#" class="nav__link">Portfolio</a></li>
-							<li class="nav__li"><a href="#" class="nav__link">Services</a></li>
-							<li class="nav__li"><a href="#" class="nav__link">Contacts</a></li>
-						</ul>
-					</nav>
-				</div>
+					<ul class="nav__list" id="toggleBurgerList">
+						<li class="nav__li"><a href="#" class="nav__link">About me</a></li>
+						<li class="nav__li"><a href="#" class="nav__link">Portfolio</a></li>
+						<li class="nav__li"><a href="#" class="nav__link">Services</a></li>
+						<li class="nav__li"><a href="#" class="nav__link">Contacts</a></li>
+					</ul>
+					<button class="burger-menu" id="toggleBurger">
+						<span class="burger-menu__item"></span>
+					</button>
+				</nav>
 			</div>
 		</header>
 		<main class="main">
 			<div class="container">
-				<h1>Lorem ipsum dolor sit amet.</h1>
+				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sint fuga perferendis natus quis esse
+					nemo exercitationem iste beatae, consequuntur facilis sapiente sit dolorum, incidunt animi at omnis
+					consectetur. Fugiat laudantium in non quibusdam tenetur quis aliquam et ipsa inventore tempore, obcaecati
+					accusantium, ex ducimus quaerat nihil vero dignissimos velit impedit sunt placeat quos. Porro possimus
+					alias est obcaecati cum dolor, harum inventore consequatur quos perspiciatis quo libero officia corporis
+					impedit ipsam similique sunt, magnam recusandae deserunt enim dolore blanditiis eius voluptatem. Enim,
+					magnam necessitatibus? Libero, odio. Dicta laboriosam quam eveniet eos, saepe distinctio beatae quasi?
+					Maiores obcaecati fuga tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quae
+					cumque atque expedita possimus fugiat? Pariatur officiis voluptate deserunt quisquam animi soluta officia
+					error neque voluptatum voluptatem adipisci rerum, eos id, quas, repellendus praesentium earum veniam non
+					aut minus optio tempore tempora! Sapiente repellendus delectus tempore ea officiis doloribus placeat
+					provident exercitationem maxime! Impedit distinctio sapiente voluptatem ab unde. Nesciunt quam
+					perspiciatis, repellendus iste esse ipsum debitis, nisi distinctio eos ad voluptatibus vero error amet!
+					Consequatur, reprehenderit dolorem quos quibusdam maiores numquam aut illo veniam ex hic cum laborum,
+					facilis placeat vel non libero, magnam iusto doloribus deleniti repudiandae assumenda.</h1>
 			</div>
 		</main>
 		<footer class="footer">
@@ -48,6 +63,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
