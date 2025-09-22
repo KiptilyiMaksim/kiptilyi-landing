@@ -16,12 +16,15 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.nav__list {
+.nav__list-links {
 	display: flex;
 	gap: 78px;
 }
 .nav__link {
 	color: var(--color-primary-900);
+}
+.nav__list-socials {
+	display: none;
 }
 /* Бургер меню стили */
 .burger-menu {
@@ -39,7 +42,7 @@
 	height: 2px;
 	width: 100%;
 	background-color: black;
-	transition-duration: 0.25s;
+	transition-duration: var(--transition-duration);
 }
 .burger-menu__item {
 	inset: auto;

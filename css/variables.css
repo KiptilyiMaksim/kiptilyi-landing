@@ -35,4 +35,9 @@
 	/* MARGINs */
 	--margin-bottom-section: 200px;
 	--margin-bottom-section-mobile: 80px;
+	/* PADDINGs */
+	--padding-container: 20px;
+	/* TRANSITION */
+	--transition-duration: 0.25s;
+	--transition-animation: ease-in-out;
 }
