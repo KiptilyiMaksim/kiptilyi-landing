@@ -28,6 +28,7 @@
 	}
 	.body.burger-body__open > .wrapper {
 		backdrop-filter: brightness(0.5);
+		-webkit-backdrop-filter: brightness(0.5);
 		transition: backdrop-filter var(--transition-duration) var(--transition-animation);
 	}
 	.burger-menu {
