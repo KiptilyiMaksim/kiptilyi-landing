@@ -8,7 +8,6 @@
 }
 /* HEADER */
 .header {
-	position: relative;
 	padding: 20px 0px;
 }
 .header__nav {
@@ -28,41 +27,5 @@
 }
 /* Бургер меню стили */
 .burger-menu {
-	position: relative;
 	display: none;
-	width: 25px;
-	height: 18px;
-	cursor: pointer;
-}
-.burger-menu__item,
-.burger-menu::before,
-.burger-menu::after {
-	position: absolute;
-	display: block;
-	height: 2px;
-	width: 100%;
-	background-color: black;
-	transition-duration: var(--transition-duration);
-}
-.burger-menu__item {
-	inset: auto;
-}
-.burger-menu::before {
-	content: "";
-	inset: 0 auto auto;
-	transform: translateY(0);
-}
-.burger-menu::after {
-	content: "";
-	inset: auto auto 0;
-	transform: translateY(100%);
-}
-.burger-menu.burger__open .burger-menu__item {
-	opacity: 0;
-}
-.burger-menu.burger__open::before {
-	transform: rotate(45deg) translate(5px, 6px);
-}
-.burger-menu.burger__open::after {
-	transform: rotate(-45deg) translate(5px, -6px);
 }
