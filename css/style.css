@@ -8,6 +8,7 @@
 }
 /* HEADER */
 .header {
+	margin-bottom: 100px;
 	padding: 20px 0px;
 }
 .header__nav {
@@ -28,4 +29,51 @@
 /* Бургер меню стили */
 .burger-menu {
 	display: none;
+}
+/* MAIN */
+/* HERO */
+.hero {
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+}
+.hero__content {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+}
+.hero__info {
+	max-width: 413px;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+.hero__text {
+	font-size: var(--font-size-subtitle);
+}
+.hero__img {
+	width: 413px;
+	height: 221px;
+}
+.button-primary {
+	display: block;
+	position: relative;
+	width: 194px;
+	padding: 14px 32px;
+	text-align: center;
+	color: var(--color-white);
+	background-color: var(--color-primary-900);
+	border-radius: 60px;
+	margin-right: 50px;
+}
+.button-primary::after {
+	content: url("../img/icons/arrow-button.svg");
+	position: absolute;
+	top: 0;
+	right: -50px;
+	width: 50px;
+	height: 50px;
+	background-color: var(--color-accent);
+	border-radius: 50%;
+	padding: 15px;
 }

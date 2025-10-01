@@ -7,11 +7,35 @@
 		fill: var(--color-primary-900);
 		transition: fill var(--transition-duration) var(--transition-animation);
 	}
+	/* button-primary */
+	.button-primary:hover {
+		background-color: var(--color-accent);
+		transition: background-color var(--transition-duration) var(--transition-animation);
+	}
+	.button-primary:hover::after {
+		content: "";
+		fill: var(--color-accent);
+		background-color: var(--color-white);
+		transition: background-color var(--transition-duration) var(--transition-animation);
+		border: 1px solid var(--color-accent);
+	}
+}
+@media (max-width: 900px) {
+	/* HEADER */
+	.header {
+		margin-bottom: 50px;
+	}
+	/* MAIN */
+	/* HERO */
+	.hero {
+		gap: 70px;
+	}
+	.hero__img {
+		width: 310px;
+		height: 170px;
+	}
 }
 @media (max-width: 630px) {
-	h1 {
-		/* font-size: var(--font-size-h1-mobile); */
-	}
 	.container {
 		padding: 0 var(--padding-container);
 	}
@@ -20,6 +44,7 @@
 		z-index: 10;
 	}
 	.header {
+		position: relative;
 		padding: 65px 0px 25px;
 	}
 	/* Burger Menu */
@@ -29,7 +54,7 @@
 	.body.burger-body__open > .wrapper {
 		backdrop-filter: brightness(0.5);
 		-webkit-backdrop-filter: brightness(0.5);
-		transition: backdrop-filter var(--transition-duration) var(--transition-animation);
+		transition: all var(--transition-duration) var(--transition-animation);
 	}
 	.burger-menu {
 		position: relative;
@@ -57,27 +82,31 @@
 		transform: rotate(-45deg) translate(6px, -7px);
 	}
 	.nav__lists {
+		max-height: 0;
+		overflow: hidden;
 		position: absolute;
-		inset: -100% auto auto 0;
+		inset: 0 auto auto 0;
 		display: flex;
 		flex-direction: column;
 		gap: 80px;
 		width: 100%;
-		padding: 188px var(--padding-container) 40px;
+		padding: 0 var(--padding-container);
 		background-color: var(--color-white);
 		border-radius: 0 0 16px 16px;
-		transition: top var(--transition-duration) var(--transition-animation);
+		transition: max-height var(--transition-duration) var(--transition-animation);
 	}
 	.nav__lists.burger-list__open {
-		top: 0;
+		max-height: 500px;
 	}
 	.nav__list-links {
 		flex-direction: column;
 		gap: 20px;
+		padding-top: 140px;
 	}
 	.nav__list-socials {
 		display: flex;
 		gap: 20px;
+		padding-bottom: 40px;
 	}
 	.nav__icon-social {
 		width: 40px;
