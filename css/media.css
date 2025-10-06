@@ -8,16 +8,16 @@
 		transition: fill var(--transition-duration) var(--transition-animation);
 	}
 	/* button-primary */
-	.button-primary:hover {
+	.button-primary:hover .button__text-primary {
 		background-color: var(--color-accent);
-		transition: background-color var(--transition-duration) var(--transition-animation);
 	}
-	.button-primary:hover::after {
-		content: "";
-		fill: var(--color-accent);
+	.button-primary:hover .button__img-primary {
 		background-color: var(--color-white);
-		transition: background-color var(--transition-duration) var(--transition-animation);
 		border: 1px solid var(--color-accent);
+		border-radius: 60px;
+	}
+	.button-primary:hover .button__icon-primary {
+		fill: var(--color-accent);
 	}
 }
 @media (max-width: 900px) {
@@ -46,6 +46,7 @@
 	.header {
 		position: relative;
 		padding: 65px 0px 25px;
+		margin-bottom: 30px;
 	}
 	/* Burger Menu */
 	.body.burger-body__open {
@@ -111,5 +112,33 @@
 	.nav__icon-social {
 		width: 40px;
 		height: 40px;
+	}
+	/* HERO */
+	.hero {
+		gap: 40px;
+	}
+	.hero__content {
+		flex-direction: column;
+		align-items: normal;
+		gap: 40px;
+	}
+	.hero__info {
+		max-width: 100%;
+		gap: 60px;
+	}
+	.button-primary {
+		width: 100%;
+	}
+	.button__text-primary {
+		width: 100%;
+	}
+	.button__img-primary {
+		padding: 17px 21px;
+	}
+	.hero__img {
+		width: 100%;
+		height: 221px;
+		object-fit: cover;
+		border-radius: 30px;
 	}
 }
