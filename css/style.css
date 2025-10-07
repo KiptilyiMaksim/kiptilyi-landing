@@ -33,6 +33,9 @@
 /* MAIN */
 /* HERO */
 .hero {
+	margin-bottom: 120px;
+}
+.hero__wrapper {
 	display: flex;
 	flex-direction: column;
 	gap: 120px;
@@ -86,4 +89,61 @@
 	height: 12px;
 	fill: var(--color-white);
 	transition: all var(--transition-duration) var(--transition-animation);
+}
+/* BIOGRAPHY */
+.biography {
+	padding-top: 80px;
+	background: url("../img/icons/decor-bg.png") no-repeat calc((100% - 795px) / 2) top;
+}
+/* ABOUT */
+.about {
+}
+.about__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.about__images {
+	position: relative;
+	height: 401px;
+	width: 522px;
+}
+.about__img {
+	position: absolute;
+}
+.about__img-1 {
+	top: 0;
+	left: 0;
+	width: 197px;
+	height: 202px;
+}
+.about__img-2 {
+	top: 30px;
+	right: 0;
+	width: 197px;
+	height: 125px;
+}
+.about__img-3 {
+	right: 0;
+	left: 210px;
+	bottom: 0;
+	width: 196px;
+	height: 190px;
+	object-fit: cover;
+	border-radius: 16px;
+}
+.about__info {
+	width: 630px;
+}
+.about__title {
+	margin-bottom: 30px;
+}
+.about__text {
+	margin-bottom: 60px;
+}
+.about__button {
+}
+/* SKILLS */
+.skills {
 }

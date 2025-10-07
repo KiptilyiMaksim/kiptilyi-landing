@@ -15,9 +15,9 @@
 	--font-size-forms: 14px;
 	--font-size-button-secondary: 12px;
 	/* Line Height:*/
-	--line-height-h1: 178px;
-	--line-height-h1-mobile: 140px;
-	--line-height-default: 160px;
+	--line-height-h1: 178%;
+	--line-height-h1-mobile: 140%;
+	--line-height-default: 160%;
 	/* Font Weight */
 	--font-weight-bold: 800;
 	--font-weight-semibold: 600;
@@ -32,9 +32,6 @@
 	--color-primary-100: #efefef;
 	--color-secondary-circle: #dfdfdf;
 	--color-white: #ffffff;
-	/* MARGINs */
-	--margin-bottom-section: 200px;
-	--margin-bottom-section-mobile: 80px;
 	/* PADDINGs */
 	--padding-container: 20px;
 	/* TRANSITION */

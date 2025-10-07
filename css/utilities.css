@@ -1,6 +1,9 @@
 .body {
 	font-family: "Montserrat", sans-serif;
 	color: var(--color-primary-900);
+	font-size: var(--font-size-default);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height-default);
 }
 .container {
 	max-width: 1320px;
@@ -11,4 +14,17 @@ h1 {
 	font-family: "Zen Dots", sans-serif;
 	font-size: clamp(var(--font-size-h1-mobile), 10.5vw, var(--font-size-h1));
 	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height-h1);
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+}
+h2 {
+	font-size: var(--font-size-h2);
+	line-height: 160%;
+	font-weight: var(--font-weight-bold);
 }
