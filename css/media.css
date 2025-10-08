@@ -314,27 +314,35 @@
 	}
 	/* EDUCATION */
 	.education__skills {
+		background-size: 250px;
 		max-width: 250px;
 	}
 	.education-skills__title {
-		left: 85px;
+		top: 129px;
+		left: 84px;
 	}
 	.education__item:nth-child(1) {
-		left: 30px;
+		left: 15px;
 	}
 	.education__item:nth-child(2) {
-		right: 65px;
+		top: 40px;
+		right: 75px;
 	}
 	.education__item:nth-child(3) {
-		right: 0px;
+		width: 66px;
+		height: 66px;
+		top: 110px;
+		right: 15px;
 	}
 	.education__item:nth-child(4) {
-		bottom: 15px;
+		bottom: 55px;
 	}
 	.education__item:nth-child(5) {
-		right: 95px;
+		right: 100px;
+		bottom: 20px;
 	}
 	.education__item:nth-child(6) {
-		bottom: 20px;
+		bottom: 85px;
+		left: 0;
 	}
 }
