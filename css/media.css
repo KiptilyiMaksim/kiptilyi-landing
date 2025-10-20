@@ -12,12 +12,21 @@
 		background-color: var(--color-accent);
 	}
 	.button-primary:hover .button__img-primary {
-		background-color: var(--color-white);
+		background-color: inherit;
 		border: 1px solid var(--color-accent);
 		border-radius: 60px;
 	}
 	.button-primary:hover .button__icon-primary {
 		fill: var(--color-accent);
+	}
+	/* button-secondary */
+	.button-primary:hover .button__text-primary {
+		color: var(--color-white);
+	}
+	/* PORTFOLIO */
+	.portfolio-footer__link:hover {
+		color: var(--color-primary-900);
+		border-color: var(--color-primary-900);
 	}
 }
 @media (max-width: 1024px) {
@@ -95,6 +104,10 @@
 	}
 	.education__item:nth-child(6) {
 		left: 40px;
+	}
+	/* PORTFOLIO */
+	.portfolio__cards {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 @media (max-width: 630px) {
@@ -295,6 +308,25 @@
 		height: 53px;
 		bottom: 80px;
 		left: 15px;
+	}
+	/* PORTFOLIO */
+	.portfolio__inner {
+		position: relative;
+		padding-bottom: 114px;
+	}
+	.portfolio__header {
+		margin-bottom: 30px;
+	}
+	.portfolio__button {
+		position: absolute;
+		bottom: 0;
+	}
+	.portfolio__cards {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+	.portfolio__card {
+		max-width: 350px;
 	}
 }
 @media (max-width: 390px) {

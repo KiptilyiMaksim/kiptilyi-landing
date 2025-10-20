@@ -4,6 +4,7 @@
 	font-size: var(--font-size-default);
 	font-weight: var(--font-weight-regular);
 	line-height: var(--line-height-default);
+	background-color: var(--color-primary-100);
 }
 .container {
 	max-width: 1320px;
@@ -27,4 +28,15 @@ h2 {
 	font-size: var(--font-size-h2);
 	line-height: 160%;
 	font-weight: var(--font-weight-bold);
+}
+h4 {
+	font-size: var(--font-size-card-heading);
+	font-weight: var(--font-weight-semibold);
+	text-transform: none;
+}
+.cards p {
+	font-size: var(--font-size-card-text);
+	font-weight: var(--font-weight-medium);
+	color: var(--color-primary-500);
+	line-height: var(--line-height-default);
 }
