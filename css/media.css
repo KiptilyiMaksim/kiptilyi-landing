@@ -34,6 +34,10 @@
 	.education__skills {
 		scale: 0.7;
 	}
+	/* SERVICES */
+	.services__cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 @media (max-width: 990px) {
 	/* BIOGRAPHY */
@@ -310,6 +314,9 @@
 		left: 15px;
 	}
 	/* PORTFOLIO */
+	.portfolio {
+		margin-bottom: 80px;
+	}
 	.portfolio__inner {
 		position: relative;
 		padding-bottom: 114px;
@@ -327,6 +334,16 @@
 	}
 	.portfolio__card {
 		max-width: 350px;
+	}
+	/* SERVICES */
+	.services {
+		margin-bottom: 80px;
+	}
+	.services__title {
+		margin-bottom: 30px;
+	}
+	.services__cards {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 @media (max-width: 390px) {

@@ -30,6 +30,7 @@ h2 {
 	font-weight: var(--font-weight-bold);
 }
 h4 {
+	/* title cards */
 	font-size: var(--font-size-card-heading);
 	font-weight: var(--font-weight-semibold);
 	text-transform: none;
