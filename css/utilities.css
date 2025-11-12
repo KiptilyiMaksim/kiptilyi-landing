@@ -35,9 +35,22 @@ h4 {
 	font-weight: var(--font-weight-semibold);
 	text-transform: none;
 }
-.cards p {
+.cards p,
+.small-text {
 	font-size: var(--font-size-card-text);
 	font-weight: var(--font-weight-medium);
 	color: var(--color-primary-500);
 	line-height: var(--line-height-default);
+}
+/* SOCIALS ICONS */
+.socials__list {
+	display: flex;
+	gap: 20px;
+}
+.social__link {
+	display: flex;
+}
+.social-icon {
+	width: 40px;
+	height: 40px;
 }
