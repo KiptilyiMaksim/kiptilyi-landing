@@ -47,10 +47,6 @@
 	}
 }
 @media (max-width: 900px) {
-	/* HEADER */
-	.header {
-		margin-bottom: 50px;
-	}
 	/* MAIN */
 	/* HERO */
 	.hero {
@@ -130,10 +126,11 @@
 		z-index: 10;
 	}
 	/* HEADER */
+	.wrapper {
+		margin-top: 150px;
+	}
 	.header {
-		position: relative;
 		padding: 65px 0px 25px;
-		margin-bottom: 30px;
 	}
 	/* Burger Menu */
 	body.burger-body__open {
