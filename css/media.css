@@ -135,10 +135,12 @@
 	/* Burger Menu */
 	body.burger-body__open {
 		overflow: hidden;
-	}
-	body.burger-body__open {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.2);
 		transition: background-color var(--transition-duration) var(--transition-animation);
+	}
+	body.burger-body__open
+		:is(img, button, a, input, textarea, .portfolio, .services, .contacts, .footer):not(.header *) {
+		opacity: 0.8;
 	}
 	.burger-menu {
 		position: relative;
