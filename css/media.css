@@ -130,7 +130,6 @@
 		margin-top: 150px;
 	}
 	.header {
-		background-color: rgba(239, 239, 239, 0.2);
 		padding: 65px 0px 25px;
 	}
 	/* Burger Menu */
@@ -193,6 +192,16 @@
 	.nav__list-socials {
 		display: flex;
 		padding-bottom: 40px;
+	}
+	/* MAIN */
+	#hero-section,
+	#biography-section,
+	#about-section,
+	#education-section,
+	#portfolio-section,
+	#services-section,
+	#contacts-section {
+		scroll-margin-block: 150px;
 	}
 	/* HERO */
 	.hero {
