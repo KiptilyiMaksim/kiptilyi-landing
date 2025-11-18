@@ -26,13 +26,14 @@ h6 {
 }
 h2 {
 	font-size: var(--font-size-h2);
-	line-height: 160%;
 	font-weight: var(--font-weight-bold);
+	letter-spacing: 0.4px;
 }
 h4 {
 	/* title cards */
 	font-size: var(--font-size-card-heading);
 	font-weight: var(--font-weight-semibold);
+	line-height: 1;
 	text-transform: none;
 }
 .cards p,

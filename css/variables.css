@@ -3,7 +3,7 @@
 	--font-family-h1: "Zen Dots", sans-serif;
 	--font-family-default: "Montserrat", sans-serif;
 	/* Fonts Size */
-	--font-size-h1: 148px;
+	--font-size-h1: 143px;
 	--font-size-h1-mobile: 60px;
 	--font-size-h2: 28px;
 	--font-size-h2-mobile: 24px;
@@ -17,9 +17,9 @@
 	--font-size-forms: 14px;
 	--font-size-button-secondary: 12px;
 	/* Line Height:*/
-	--line-height-h1: 178%;
-	--line-height-h1-mobile: 140%;
-	--line-height-default: 160%;
+	--line-height-h1: 1.78;
+	--line-height-h1-mobile: 1.12;
+	--line-height-default: 1.6;
 	/* Font Weight */
 	--font-weight-bold: 800;
 	--font-weight-semibold: 600;
