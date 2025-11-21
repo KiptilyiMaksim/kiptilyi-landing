@@ -1,0 +1,41 @@
+.main {
+	margin: 266px 0px 180px;
+}
+.wrapper {
+	margin: 0;
+}
+.custom-error {
+}
+.container {
+}
+.custom-error__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.custom-error__title {
+	margin-bottom: 24px;
+	line-height: var(--line-height-h1-mobile);
+}
+.custom-error__text {
+	font-size: var(--font-size-card-heading);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-primary-500);
+	margin-bottom: 88px;
+}
+.custom-error__button {
+}
+.button-primary {
+}
+.button-custom-error__text {
+}
+.button__text-primary {
+}
+.button-custom-error__img {
+}
+.button__img-primary {
+}
+.button-custom-error__icon {
+}
+.button__icon-primary {
+}
