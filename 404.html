@@ -18,9 +18,41 @@
 	<link rel="stylesheet" href="../css/utilities.css">
 	<link rel="stylesheet" href="../css/variables.css">
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/404.css">
-	<link rel="stylesheet" href="../css/404-media.css">
 	<link rel="stylesheet" href="../css/media.css">
+	<!-- Styles 404 page -->
+	<style>
+		.main {
+			margin: 266px 0px 180px;
+		}
+
+		.wrapper {
+			margin: 0;
+		}
+
+		.custom-error__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.custom-error__title {
+			margin-bottom: 24px;
+			line-height: var(--line-height-h1-mobile);
+		}
+
+		.custom-error__text {
+			font-size: var(--font-size-card-heading);
+			font-weight: var(--font-weight-semibold);
+			color: var(--color-primary-500);
+			margin-bottom: 88px;
+		}
+
+		@media (max-width: 630px) {
+			.main {
+				margin-top: 100px;
+			}
+		}
+	</style>
 </head>
 
 <body class="body" id="toggleBurgerBody">
