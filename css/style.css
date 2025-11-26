@@ -61,7 +61,6 @@ html {
 .nav-dropdown__header {
 	position: relative;
 	padding: 0px 20px 0px 12px;
-	list-style-type: none;
 	user-select: none;
 }
 .nav__dropdown[open] .nav-dropdown__header::after {
@@ -72,6 +71,10 @@ html {
 	position: absolute;
 	inset: 0px 0px 0px auto;
 	transition: transform var(--transition-duration) var(--transition-animation);
+}
+.nav-dropdown__header::marker {
+	content: "";
+	list-style-type: none;
 }
 .nav-dropdown__items {
 	position: absolute;
