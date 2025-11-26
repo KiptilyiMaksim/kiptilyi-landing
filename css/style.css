@@ -61,7 +61,8 @@ html {
 .nav-dropdown__header {
 	position: relative;
 	padding: 0px 20px 0px 12px;
-	list-style: none;
+	list-style-type: none;
+	user-select: none;
 }
 .nav__dropdown[open] .nav-dropdown__header::after {
 	transform: rotate(180deg);
