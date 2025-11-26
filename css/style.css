@@ -27,13 +27,75 @@ html {
 	align-items: center;
 	justify-content: space-between;
 }
+.nav__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
 .nav__list-links {
 	display: flex;
 	gap: 78px;
+	margin: 0 auto;
 }
 .header__link {
 	color: var(--color-primary-900);
 }
+.nav__select {
+	width: 64px;
+	height: 22px;
+	text-align: center;
+}
+/* Мультиязычность */
+.nav__dropdown {
+	position: relative;
+	max-width: 64px;
+	cursor: pointer;
+}
+.nav-dropdown__header,
+.nav-dropdown__item {
+	font-weight: var(--font-weight-medium);
+	font-size: var(--font-size-forms);
+	text-transform: uppercase;
+}
+.nav-dropdown__header {
+	position: relative;
+	padding: 0px 20px 0px 12px;
+	list-style: none;
+}
+.nav__dropdown[open] .nav-dropdown__header::after {
+	transform: rotate(180deg);
+}
+.nav-dropdown__header::after {
+	content: url("../img/icons/arrow-dropdown.svg");
+	position: absolute;
+	inset: 0px 0px 0px auto;
+	transition: transform var(--transition-duration) var(--transition-animation);
+}
+.nav-dropdown__items {
+	position: absolute;
+	top: 25px;
+	left: -10px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	padding: 8px 12px;
+	min-width: 76px;
+	background-color: var(--color-white);
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(51, 51, 51, 0.2);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(51, 51, 51, 0.2);
+	box-shadow: 0px 5px 10px 2px rgba(51, 51, 51, 0.2);
+}
+.nav-dropdown__item {
+}
+.nav-dropdown__link {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	color: var(--color-primary-900);
+}
+/* Соц. сети в header */
 .nav__list-socials {
 	display: none;
 }

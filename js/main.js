@@ -24,3 +24,24 @@ document.addEventListener('click', function (removeList) {
 		menuList.classList.remove('burger-list__open');
 	}
 });
+
+// Dropdown Menu Multilingual
+document.addEventListener('DOMContentLoaded', function () {
+	const dropdown = document.querySelector('.nav__dropdown');
+	function closeDropdown() {
+		dropdown.removeAttribute('open');
+	}
+	dropdown.addEventListener('click', function (e) {
+		if (e.target.classList.contains('nav-dropdown__link')) {
+			closeDropdown();
+		}
+	});
+	document.addEventListener('click', function (e) {
+		if (!dropdown.contains(e.target)) {
+			closeDropdown();
+		}
+	});
+	dropdown.addEventListener('click', function (e) {
+		e.stopPropagation();
+	});
+});
