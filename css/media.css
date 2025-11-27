@@ -180,15 +180,15 @@
 		transform: rotate(-45deg) translate(6px, -7px);
 	}
 	.nav__inner {
-		max-height: 0;
-		overflow: hidden;
 		position: absolute;
 		inset: 0 auto auto 0;
-		display: flex;
-		flex-direction: column;
-		gap: 80px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 80px;
 		width: 100%;
-		padding: 0 var(--padding-container);
+		max-height: 0;
+		overflow: hidden;
+		padding: 0px var(--padding-container);
 		background-color: var(--color-white);
 		border-radius: 0 0 16px 16px;
 		transition: max-height var(--transition-duration) var(--transition-animation);
@@ -197,6 +197,7 @@
 		max-height: 500px;
 	}
 	.nav__list-links {
+		grid-area: 1 / 1 / 2 / 3;
 		flex-direction: column;
 		gap: 20px;
 		padding-top: 140px;
@@ -204,8 +205,9 @@
 	}
 	/* Мультиязычность */
 	.nav__dropdown {
-		position: absolute;
-		inset: auto 20px 50px auto;
+		grid-area: 2 / 2 / 3 / 3;
+		justify-self: end;
+		padding-bottom: 40px;
 		/* Убрал эффект клика на смартфонах */
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
 		-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
@@ -217,6 +219,7 @@
 	}
 	/* Соц сети */
 	.nav__list-socials {
+		grid-area: 2 / 1 / 3 / 2;
 		display: flex;
 		padding-bottom: 40px;
 	}
