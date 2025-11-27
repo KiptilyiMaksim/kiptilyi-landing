@@ -75,6 +75,7 @@ html {
 .nav-dropdown__header::marker {
 	content: "";
 	list-style-type: none;
+	display: none;
 }
 .nav-dropdown__items {
 	position: absolute;
