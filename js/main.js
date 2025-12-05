@@ -120,3 +120,5 @@ form.addEventListener('submit', (event) => {
 	event.preventDefault();
 	openModalandBlockScroll();
 });
+
+dialogPolyfill.registerDialog(dialog);

@@ -117,6 +117,9 @@
 	.contacts {
 		background-position: calc((100% - 350px) / 2) 315px;
 	}
+	.contacts__dialog {
+		max-width: revert;
+	}
 }
 @media (max-width: 630px) {
 	h1 {
