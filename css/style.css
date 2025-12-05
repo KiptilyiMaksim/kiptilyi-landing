@@ -1,5 +1,10 @@
 html {
 	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+}
+body {
+	scrollbar-gutter: stable;
+	min-height: 100vh;
 }
 .main {
 	flex-grow: 1;
@@ -516,6 +521,67 @@ html {
 	height: 240px;
 	margin-bottom: 40px;
 	resize: none;
+}
+.contacts__dialog {
+	position: fixed;
+	margin: 0;
+	max-width: 750px;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px 20px 40px 20px;
+	border: none;
+	border-radius: 30px;
+}
+.contacts__dialog::backdrop {
+	background-color: var(--color-primary-900);
+	opacity: 0.7;
+}
+.dialog__inner {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+}
+.dialog-button__close {
+	position: relative;
+	width: 46px;
+	height: 46px;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+.dialog-button__close::before,
+.dialog-button__close::after {
+	position: absolute;
+	left: 15px;
+	width: 20px;
+	height: 1px;
+	border-radius: 16px;
+	background-color: var(--color-primary-500);
+}
+.dialog-button__close::before {
+	content: "";
+	transform: rotate(45deg);
+}
+.dialog-button__close::after {
+	content: "";
+	transform: rotate(-45deg);
+}
+.dialog__title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin-bottom: 60px;
+}
+.dialog-title__text {
+	display: inline-block;
+}
+.dialog__text {
+	margin-bottom: 40px;
+}
+.scroll-block {
+	overflow: hidden;
 }
 .contacts__info {
 	max-width: 330px;

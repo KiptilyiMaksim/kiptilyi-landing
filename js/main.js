@@ -45,3 +45,78 @@ document.addEventListener('DOMContentLoaded', function () {
 		e.stopPropagation();
 	});
 });
+
+// Dialog script
+// const dialog = document.querySelector('.contacts__dialog');
+// const openModalButton = document.querySelector('.contacts__button');
+// const closeModalButton = document.querySelector('.dialog-button__close');
+
+// function openModalandBlockScroll() {
+// 	dialog.showModal();
+// 	document.body.classList.add('scroll-block');
+// }
+
+// function returnScroll() {
+// 	document.body.classList.remove('scroll-block');
+// }
+
+// function close() {
+// 	dialog.close();
+// 	returnScroll();
+// }
+
+// openModalButton.addEventListener('click', openModalandBlockScroll);
+// closeModalButton.addEventListener('click', () => {
+// 	close();
+// });
+
+// function closeOnOverlayClick({ currentTarget, target }) {
+// 	const dialog = currentTarget;
+// 	const isOnOverlayClick = target === dialog;
+// 	if (isOnOverlayClick) {
+// 		close();
+// 	}
+// }
+
+// dialog.addEventListener('click', closeOnOverlayClick);
+// dialog.addEventListener('cancel', () => {
+// 	returnScroll();
+// });
+const form = document.querySelector('.feedback__form');
+const dialog = document.querySelector('.contacts__dialog');
+const closeModalButton = document.querySelector('.dialog-button__close');
+
+function openModalandBlockScroll() {
+	dialog.showModal();
+	document.body.classList.add('scroll-block');
+}
+
+function returnScroll() {
+	document.body.classList.remove('scroll-block');
+}
+
+function close() {
+	dialog.close();
+	returnScroll();
+}
+
+closeModalButton.addEventListener('click', () => {
+	close();
+});
+
+dialog.addEventListener('click', ({ currentTarget, target }) => {
+	if (target === currentTarget) close();
+});
+
+dialog.addEventListener('cancel', returnScroll);
+
+form.addEventListener('submit', (event) => {
+
+	if (!form.checkValidity()) {
+		event.preventDefault();
+		return;
+	}
+
+	event.preventDefault();
+	openModalandBlockScroll();
+});
